@@ -7,17 +7,25 @@ body{
     font-family: Helvetica, Arial, Tahoma, Verdana;
     font-size:14px;
     color: #000;
+    margin: 10px;
 }
 
 h1 {
-  margin-bottom: 15px;
-  font-size: 28px;
+  margin-bottom: 35px;
+  font-size: 175%;
   text-align: center;
   color: maroon;
 }
 
-p {
-  margin: 10px 5px 0;
+p, li {
+  margin: 10px 0 0;
+  padding:0;
+}
+
+ul {
+  padding:0;
+  margin: 0;
+  padding-left: 15px;
 }
 
 
@@ -29,24 +37,29 @@ p {
 
  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    padding: 5px;
   }
 
 .inner{
-      border: 1px solid #000;
+    border: 1px solid #000;
     overflow: auto;
     height: 240px;
     background: #ccc;
     position: relative;
-    padding-top: 40px;
+    padding: 45px 10px 10px;
+    margin: 10px;
 }
 
 .title {
-  width:50%;
+  font-size:125%;
+  text-align: center;
+  line-height: 125%;
+  width:240px;
+  max-width:240px;
+  max-height:40px;
   border: 1px solid #000;
   border-top: none;
   border-right: none;
-  padding: 5px;
+  padding: 10px;
   background: green;
   color: white;
   font-weight: bold;
@@ -60,7 +73,7 @@ p {
 .row > div:nth-child(3n+2) .title {
   background: red;
   }  
-/********** Desktop (more than 992 px width) **********/
+/********** Desktop (more than 991 px width) **********/
 @media (min-width: 992px) {
 
   .col-lg-1 {
