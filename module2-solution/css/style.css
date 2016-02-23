@@ -13,6 +13,7 @@ h1 {
   margin-bottom: 15px;
   font-size: 28px;
   text-align: center;
+  color: maroon;
 }
 
 p {
@@ -25,24 +26,33 @@ p {
 .row {
   width: 100%;
 }
+
  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 2px solid maroon;
-    overflow: auto;
-    height: 220px;
-    background: #ccc;
+    padding: 5px;
   }
 
+.inner{
+      border: 1px solid #000;
+    overflow: auto;
+    height: 240px;
+    background: #ccc;
+    position: relative;
+    padding-top: 40px;
+}
+
 .title {
-  float: right;
   width:50%;
-  border: 2px solid maroon;
+  border: 1px solid #000;
   border-top: none;
   border-right: none;
   padding: 5px;
   background: green;
   color: white;
   font-weight: bold;
+  position: absolute;
+  right: 0;
+  top:0;
 }
 .row > div:nth-child(3n+1) .title {
   background: blue;
