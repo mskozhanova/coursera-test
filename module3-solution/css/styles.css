@@ -1,13 +1,12 @@
-.nav {
-  background: #C4C9DF;
+ @media (max-width:767px){
+  .nav {
+    background: #C4C9DF;
+  }
+  .nav > li {
+    border-bottom: 1px solid #5160AA;
+  }
 }
-.nav > li {
-  border-bottom: 1px solid #5160AA;
-}
-.navbar-nav{
-  margin-top:0;
-  margin-bottom: 0;
-}
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #5160AA;
 }
@@ -16,6 +15,10 @@
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #5160AA;
+}
+.navbar-nav{
+  margin-top:0;
+  margin-bottom: 0;
 }
 #chicken{
   background:#ccc;
