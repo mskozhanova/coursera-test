@@ -2,10 +2,10 @@
 'use strict';
 
 angular.module('MsgApp', [])
-.controller('MsgController', MsgController);
+.controller('LunchCheckController', LunchCheckController);
 
-MsgController.$inject = ['$scope'];
-function MsgController($scope) {
+LunchCheckController.$inject = ['$scope'];
+function LunchCheckController($scope) {
   $scope.message = "";
   $scope.items="";
   $scope.color="grey";
