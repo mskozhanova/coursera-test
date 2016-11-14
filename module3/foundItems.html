@@ -1,7 +1,15 @@
 
-    <div class="clearfix"></div><ol>
-  <li ng-repeat="item in list.items">
-    {{ item.name }}: {{ item.description }}
-    <button ng-click="list.onRemove({index: $index});">Don't want this one!</button>
+
+
+    <ul class="list-group">
+  <li class="list-group-item list-group-item-info"" ng-repeat="item in list.items">
+    <h3>{{ item.name }} ({{ item.short_name }})</h3> <p>{{ item.description }}</p>
+    <button  class="btn btn-danger btn-xs" ng-click="list.onRemove({index: $index});">
+      <span class="glyphicon glyphicon-remove"></span> Don't want this one!</button>
   </li>
-</ol>
+</ul>
+
+<div  class="alert alert-warning " role="alert"  ng-if="list.items.length==0">
+  <span class="glyphicon glyphicon-remove"></span> Nothing found</div>
+
+ 
