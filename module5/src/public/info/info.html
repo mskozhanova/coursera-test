@@ -1,0 +1,14 @@
+<div class="container">
+  <h2 id="menu-categories-title" class="text-center">My Info</h2>
+  <div class="text-center">
+    registered information, including the favorite menu item
+  </div>
+
+  <div ng-if="info.SignUp">
+    Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
+  </div>
+ <div ng-hide="info.SignUp">
+   <h1>Info</h1>
+   <info-show info="info.UserInfo"></info-show>
+ </div>
+</div>

@@ -1,0 +1,16 @@
+
+    <div class="row">
+    First Name : {{ $ctrl.info.firstname }} <br>
+    Last Name : {{ $ctrl.info.lastname }} <br>
+    Email Address : {{ $ctrl.info.email }} <br>
+    Phone Number : {{ $ctrl.info.phone }} <br>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <img class="img-responsive" width="250" height="150" ng-src="{{$ctrl.info.dish_img_src}}">
+    </div>
+    <div class="menu-item-description col-sm-9">
+      <h3>{{ $ctrl.info.dish_name }}</h3>
+      <p> {{ $ctrl.info.dish_description }} </p>
+    </div>
+  </div>
